@@ -8,6 +8,9 @@ day 1:
 2. created header and basic navbar
 3. added login modal with react-bootstrap
 
+day 2:
+1. styled modal with website colors and border styles.
+
 Todo List for Tomorrow:
 1. Add Login Form
 2. Add Signup Form
