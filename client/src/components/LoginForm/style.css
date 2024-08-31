@@ -1,3 +1,4 @@
-.login-form {
-  
+button {
+  background-color: var(--contrast-dark);
+  color: var(--contrast-light)
 }

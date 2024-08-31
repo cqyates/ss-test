@@ -1,6 +1,4 @@
 .modal {
-  width: 750px;
-  height: 450px;
   background-color: var(--contrast-light);
   color: var(--contrast-dark);
   position: absolute;
@@ -8,4 +6,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 15px;
+  padding: 1rem;
+  width: 40%
 }

@@ -6,10 +6,11 @@ import Tab from 'react-bootstrap/Tab';
 import Modal from 'react-bootstrap/Modal';
 
 import LoginForm from '../LoginForm';
+import SignupForm from '../SignupForm';
 
 import Auth from '../../utils/auth';
 
-import "./style.css"
+import './style.css';
 const AppNav = () => {
   const [showModal, setShowModal] = useState(false);
   return (
@@ -31,13 +32,12 @@ const AppNav = () => {
         <div>
           <Nav.Link onClick={() => setShowModal(true)}>
             <h3>
-              {' '}
-              <a>Login</a>
+              Login
             </h3>
           </Nav.Link>
         </div>
       )}
-       <Modal
+      <Modal
         size="lg"
         show={showModal}
         onHide={() => setShowModal(false)}
@@ -45,19 +45,25 @@ const AppNav = () => {
         className="modal"
       >
         <Tab.Container defaultActiveKey="login">
-          <Modal.Header closeButton>
+          {/* <Modal.Header closeButton>
             <Modal.Title id="signup-modal">
-              <Nav variant="pills">
+              <Nav>
                 <Nav.Item>
                   <Nav.Link eventKey="login">Login</Nav.Link>
                 </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="signup">Sign Up</Nav.Link>
+                </Nav.Item>
               </Nav>
             </Modal.Title>
-          </Modal.Header>
+          </Modal.Header> */}
           <Modal.Body>
             <Tab.Content>
-              <Tab.Pane eventKey="login">
+              {/* <Tab.Pane eventKey="login">
                 <LoginForm handleModalClose={() => setShowModal(false)} />
+              </Tab.Pane> */}
+              <Tab.Pane eventKey="signup">
+                <SignupForm handleModalClose={() => setShowModal(false)} />
               </Tab.Pane>
             </Tab.Content>
           </Modal.Body>
