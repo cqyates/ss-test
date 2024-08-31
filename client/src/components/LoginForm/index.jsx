@@ -1,9 +1,10 @@
-const LoginForm = ()=> {
+import "./style.css"
+const LoginForm = () => {
   return (
-    <form>
-      <h2>Login Form PlaceHolder</h2>
-    </form>
-  )
-}
+    <div className="login-form">
+      <h2>Login Form</h2>
+    </div>
+  );
+};
 
-export default LoginForm
+export default LoginForm;

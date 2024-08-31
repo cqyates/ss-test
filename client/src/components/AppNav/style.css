@@ -1,0 +1,11 @@
+.modal {
+  width: 750px;
+  height: 450px;
+  background-color: var(--contrast-light);
+  color: var(--contrast-dark);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}

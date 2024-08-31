@@ -9,6 +9,7 @@ import LoginForm from '../LoginForm';
 
 import Auth from '../../utils/auth';
 
+import "./style.css"
 const AppNav = () => {
   const [showModal, setShowModal] = useState(false);
   return (
@@ -41,6 +42,7 @@ const AppNav = () => {
         show={showModal}
         onHide={() => setShowModal(false)}
         aria-labelledby="signup-modal"
+        className="modal"
       >
         <Tab.Container defaultActiveKey="login">
           <Modal.Header closeButton>
