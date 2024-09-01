@@ -1,11 +1,11 @@
-.modal {
+.modal div {
   background-color: var(--contrast-light);
-  color: var(--contrast-dark);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 15px;
-  padding: 1rem;
-  width: 40%
+  border-radius: 15px
+}
+.active {
+  background-color: var(--contrast-dark);
+}
+
+.sub-link {
+ color: var(--contrast-dark)
 }

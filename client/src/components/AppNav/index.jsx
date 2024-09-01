@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button'
 
 import LoginForm from '../LoginForm';
 import SignupForm from '../SignupForm';
@@ -45,23 +46,23 @@ const AppNav = () => {
         className="modal"
       >
         <Tab.Container defaultActiveKey="login">
-          {/* <Modal.Header closeButton>
+          <Modal.Header closeButton>
             <Modal.Title id="signup-modal">
-              <Nav>
+              <Nav id="nav-btn" variant="pills">
                 <Nav.Item>
-                  <Nav.Link eventKey="login">Login</Nav.Link>
+                  <Nav.Link className="sub-link" eventKey="login" style={{backgroundColor: `var(--contrast-dark)`, margin: ".5rem", color: `var(--contrast-light)`}}>Login</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="signup">Sign Up</Nav.Link>
+                  <Nav.Link className="sub-link" eventKey="signup" style={{backgroundColor: `var(--contrast-dark)`, margin: ".5rem", color: `var(--contrast-light)`}}>Sign Up</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Modal.Title>
-          </Modal.Header> */}
+          </Modal.Header>
           <Modal.Body>
             <Tab.Content>
-              {/* <Tab.Pane eventKey="login">
+              <Tab.Pane eventKey="login">
                 <LoginForm handleModalClose={() => setShowModal(false)} />
-              </Tab.Pane> */}
+              </Tab.Pane>
               <Tab.Pane eventKey="signup">
                 <SignupForm handleModalClose={() => setShowModal(false)} />
               </Tab.Pane>

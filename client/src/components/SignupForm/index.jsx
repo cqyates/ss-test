@@ -5,7 +5,7 @@ import { Form, Button, Alert } from 'react-bootstrap';
 // import { ADD_USER } from '../../utils/mutations.js';
 
 import Auth from '../../utils/auth.js';
-import "./style.css"
+// import "./style.css"
 
 const SignupForm = () => {
   // set initial form state
@@ -76,10 +76,11 @@ const SignupForm = () => {
         </Alert>
 
         <Form.Group className='mb-3 formGroup'>
-          <Form.Label htmlFor="username">Username </Form.Label>
+          <Form.Label htmlFor="username"></Form.Label>
           <Form.Control
             type="text"
             name="username"
+            placeholder="username"
             onChange={handleInputChange}
             value={userFormData.username}
             required
@@ -90,10 +91,11 @@ const SignupForm = () => {
         </Form.Group>
 
         <Form.Group className='mb-3 formGroup'>
-          <Form.Label htmlFor="email">Email </Form.Label>
+          <Form.Label htmlFor="email"></Form.Label>
           <Form.Control
             type="email"
             name="email"
+            placeholder="email"
             onChange={handleInputChange}
             value={userFormData.email}
             required
@@ -104,10 +106,11 @@ const SignupForm = () => {
         </Form.Group>
 
         <Form.Group className='mb-3 formGroup'>
-          <Form.Label htmlFor="password">Password </Form.Label>
+          <Form.Label htmlFor="password"></Form.Label>
           <Form.Control
             type="password"
             name="password"
+            placeholder="password"
             onChange={handleInputChange}
             value={userFormData.password}
             required
